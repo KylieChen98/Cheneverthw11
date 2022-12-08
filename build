@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Building the publishbutton file."
+g++ publishbutton.cpp -o publishbutton -lpaho-mqtt3c
+echo "..."
+echo Building the subscribe LED file.
+g++ subscribe.cpp -o subscribe -lpaho-mqtt3c
+echo ...
+echo "File building completed."
